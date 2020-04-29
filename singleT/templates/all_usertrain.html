@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trains</title>
+</head>
+<body>
+<table border=1>
+	<thead>
+		<th>ticket id</th>
+		<th>username</th>
+		<th>train id</th>
+		<th>from city</th>
+		<th>to city</th>
+
+	</thead>
+	<tbody>
+		<tr>
+		{% for train in trains %}
+		<td>{{train[0]}}</td>
+		<td>{{train[1]}}</td>
+		<td>{{train[2]}}</td>
+		<td>{{train[3]}}</td>
+		<td>{{train[4]}}</td>
+		
+	</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+</body>
+</html>

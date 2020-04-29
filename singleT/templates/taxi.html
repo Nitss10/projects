@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>taxis</title>
+</head>
+<body>
+<table border=1>
+	<thead>
+		<th>taxi id</th>
+		<th>taxi number</th>
+		<th>operational city</th>
+		<th>rate(km)</th>
+		<th>  </th>
+
+	</thead>
+	<tbody>
+		<tr>
+		{% for taxi in taxis %}
+		<td>{{taxi[0]}}</td>
+		<td>{{taxi[1]}}</td>
+		<td>{{taxi[2]}}</td>
+		<td>{{taxi[3]}}</td>
+		<td><a href="http://localhost:5000/book_taxi/{{taxi[0]}}"><button>BOOK NOW</button></a></td>
+	</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</body>
+</html>

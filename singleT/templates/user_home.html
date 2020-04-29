@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+</head>
+<body>
+hello {{user}}
+<br>
+your tenant id is {{tid}}
+<br>
+your tenant's services are {{services}}
+{% for service in services %}
+<a href="http://localhost:5000/{{service[0]}}">{{service[0]}} </a>
+{%endfor%}
+ <a href="http://localhost:5000/logout"><button> logout </button></a>
+<br>
+</body>
+</html>

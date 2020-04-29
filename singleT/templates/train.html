@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trains</title>
+</head>
+<body>
+<table border=1>
+	<thead>
+		<th>train id</th>
+		<th>train name</th>
+		<th>from city</th>
+		<th>to city</th>
+		<th>price</th>
+		<th>available seats</th>
+		<th>  </th>
+
+	</thead>
+	<tbody>
+		<tr>
+		{% for train in trains %}
+		<td>{{train[0]}}</td>
+		<td>{{train[1]}}</td>
+		<td>{{train[2]}}</td>
+		<td>{{train[3]}}</td>
+		<td>{{train[4]}}</td>
+		<td>{{train[5]}}</td>
+		<td><a href="http://localhost:5000/book_train/{{train[0]}}"><button>BOOK NOW</button></a></td>
+	</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+</body>
+</html>

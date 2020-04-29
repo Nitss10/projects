@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flights</title>
+</head>
+<body>
+<table border=1>
+	<thead>
+        <th> ticket_id </th>
+        <th>username</th>
+		<th>flight id</th>
+		<th>from city</th>
+		<th>to city</th>
+		
+
+	</thead>
+	<tbody>
+		<tr>
+		{% for flight in flights %}
+		<td>{{flight[0]}}</td>
+		<td>{{flight[1]}}</td>
+		<td>{{flight[2]}}</td>
+		<td>{{flight[3]}}</td>
+		<td>{{flight[4]}}</td>
+		
+	</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hotels</title>
+</head>
+<body>
+<table border=1>
+	<thead>
+		<th>ticket id</th>
+		<th>username</th>
+		<th>hotel id</th>
+		<th> city</th>
+
+	</thead>
+	<tbody>
+		<tr>
+		{% for hotel in hotels %}
+		<td>{{hotel[0]}}</td>
+		<td>{{hotel[1]}}</td>
+		<td>{{hotel[2]}}</td>
+		<td>{{hotel[3]}}</td>
+		
+	</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+</body>
+</html>

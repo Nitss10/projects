@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flights</title>
+</head>
+<body>
+<table border=1>
+	<thead>
+		<th>flight id</th>
+		<th>flight name</th>
+		<th>from city</th>
+		<th>to city</th>
+		<th>avail seats</th>
+		<th>  </th>
+
+	</thead>
+	<tbody>
+		<tr>
+		{% for flight in flights %}
+		<td>{{flight[0]}}</td>
+		<td>{{flight[1]}}</td>
+		<td>{{flight[2]}}</td>
+		<td>{{flight[3]}}</td>
+		<td>{{flight[4]}}</td>
+		<td><a href="http://localhost:5000/book_flight/{{flight[0]}}"><button>BOOK NOW</button></a></td>
+	</tr>
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</body>
+</html>

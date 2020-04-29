@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+</head>
+<body>
+
+users {{user}}
+<br>
+{% for service in services_list %}
+<a href="http://localhost:5000/all_{{service[0]}}"><button> {{service[0]}} </button></a>     
+{% endfor %}
+<br><br><br>
+{% for service in services_list %}
+<a href="http://localhost:5000/all_user{{service[0]}}"><button> user{{service[0]}} </button></a>     
+{% endfor %}
+
+<br><br><br>
+ <a href="http://localhost:5000/logout"><button> logout </button></a>
+</body>
+</html>
