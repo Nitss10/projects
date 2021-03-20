@@ -13,7 +13,7 @@ html2text==2020.1.16
 idna==2.9
 inscriptis==1.0
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 jmespath==0.9.5
 joblib==0.14.1
 lxml==4.5.0
